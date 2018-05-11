@@ -6,8 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -17,6 +20,7 @@ import java.util.ArrayList;
 
 public class tarjetaAdapter extends BaseAdapter{
 
+    ArrayList<String> imagen;
     ArrayList<Tarjeta> datos;
     Context contexto;
 
@@ -49,6 +53,9 @@ public class tarjetaAdapter extends BaseAdapter{
         TextView descripcionpersona = (TextView) v.findViewById(R.id.tercertextv);
         descripcionpersona.setText(datos.get(position).getDescripcion());
 
+        ImageView img = (ImageView) v.findViewById(R.id.imagen);
+
+        Picasso.with(contexto).load(imagen.get(position)).into(img);
         return v;
     }
 }

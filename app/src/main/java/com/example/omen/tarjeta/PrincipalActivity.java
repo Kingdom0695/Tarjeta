@@ -16,8 +16,10 @@ public class PrincipalActivity extends AppCompatActivity {
         origenDeDatos datos = new origenDeDatos();
         tarjetaAdapter adapter = new tarjetaAdapter();
         adapter.contexto = this;
+        adapter.imagen = datos.getImagenes();
         adapter.datos = datos.getDatos();
         lista.setAdapter(adapter);
+
     }
 
     public ListView lista;
