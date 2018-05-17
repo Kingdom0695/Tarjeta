@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class origenDeDatos {
     origenDeDatos(){}
     public ArrayList<String> getImagenes(){
-     ArrayList <String> Imagenes = new ArrayList<String>();
+     ArrayList <String> Imagenes = new ArrayList<>();
      Imagenes.add("https://www.hardcoregamer.com/wp-content/uploads/2017/01/Kingdom-Hearts-Saga-747x309.jpg");
      Imagenes.add("https://www.vsgamers.es/thumbnails/images/products/3814/main/es-sillas-gaming-gaming-polipiel-drift-edicion-especial-real-betis-balompie.jpg\n");
      Imagenes.add("https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05525302.png\n");
@@ -26,7 +26,7 @@ public class origenDeDatos {
     }
 
     public ArrayList<Tarjeta> getDatos(){
-        ArrayList <Tarjeta> resultado = new ArrayList<Tarjeta>();
+        ArrayList <Tarjeta> resultado = new ArrayList<>();
 
         Tarjeta uno = new Tarjeta();
         uno.setDescripcion("Soy corredor");
@@ -84,8 +84,8 @@ public class origenDeDatos {
 
         Tarjeta diez = new Tarjeta();
         diez.setDescripcion("Soy una mujer");
-        diez.setNombre("Daniela");
-        diez.setEdad(19);
+        diez.setNombre("Mariana");
+        diez.setEdad(18);
         resultado.add(diez);
 
         return resultado;
