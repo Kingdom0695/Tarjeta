@@ -84,8 +84,8 @@ public class origenDeDatos {
 
         Tarjeta diez = new Tarjeta();
         diez.setDescripcion("Soy una mujer");
-        diez.setNombre("Mariana");
-        diez.setEdad(18);
+        diez.setNombre("Marianita");
+        diez.setEdad(19);
         resultado.add(diez);
 
         return resultado;
