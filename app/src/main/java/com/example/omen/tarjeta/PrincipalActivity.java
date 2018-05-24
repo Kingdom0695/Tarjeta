@@ -17,7 +17,7 @@ public class PrincipalActivity extends AppCompatActivity {
 
         ListView lista = (ListView) findViewById(R.id.lista);
         origenDeDatos datos = new origenDeDatos();
-        tarjetaAdapter adapter = new tarjetaAdapter();
+        final tarjetaAdapter adapter = new tarjetaAdapter();
         adapter.contexto = this;
         adapter.imagen = datos.getImagenes();
         adapter.datos = datos.getDatos();
@@ -28,6 +28,12 @@ public class PrincipalActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) { //el primer parametro es el adaptador con el que fue creado, el tercer es la posicion del elemento
 
                 Intent objeto = new Intent(PrincipalActivity.this,actividadejemploActivity.class);
+
+                Tarjeta x = (Tarjeta) parent.getItemAtPosition(position); //Devuelve elemento del pojo (Tarjeta), un arraylist del adaptador
+                objeto.putExtra("Nombre", x.getNombre()); //Partes del pojo (Tarjeta) los envia
+                objeto.putExtra("Edad", x.getEdad());
+                objeto.putExtra("Descripcion", x.getDescripcion());
+                objeto.putExtra("Imagen", x.getImagen());
                 startActivity(objeto); //Iniciar la actividad
             }
         });
