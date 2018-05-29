@@ -27,65 +27,76 @@ public class origenDeDatos {
 
     public ArrayList<Tarjeta> getDatos(){
         ArrayList <Tarjeta> resultado = new ArrayList<>();
+        ArrayList <String> x = getImagenes();
 
         Tarjeta uno = new Tarjeta();
         uno.setDescripcion("Soy corredor");
         uno.setNombre("Daniel");
         uno.setEdad(19);
+        uno.setLink(x.get(0)); //Para la obtencion del link
         resultado.add(uno);
 
         Tarjeta dos = new Tarjeta();
         dos.setDescripcion("Soy atleta");
         dos.setNombre("Palomino");
         dos.setEdad(19);
+        dos.setLink(x.get(1)); //Para la obtencion del link
         resultado.add(dos);
 
         Tarjeta tres = new Tarjeta();
         tres.setDescripcion("Soy boxeador");
         tres.setNombre("Ivan");
         tres.setEdad(19);
+        tres.setLink(x.get(2)); //Para la obtencion del link
         resultado.add(tres);
 
         Tarjeta cuatro = new Tarjeta();
         cuatro.setDescripcion("Soy nadador");
         cuatro.setNombre("Juan");
         cuatro.setEdad(19);
+        cuatro.setLink(x.get(3)); //Para la obtencion del link
         resultado.add(cuatro);
 
         Tarjeta cinco = new Tarjeta();
         cinco.setDescripcion("Soy ciclista");
         cinco.setNombre("Edson");
         cinco.setEdad(19);
+        cinco.setLink(x.get(4)); //Para la obtencion del link
         resultado.add(cinco);
 
         Tarjeta seis = new Tarjeta();
         seis.setDescripcion("Soy sumo");
         seis.setNombre("Ramiro");
         seis.setEdad(19);
+        seis.setLink(x.get(5)); //Para la obtencion del link
         resultado.add(seis);
 
         Tarjeta siete = new Tarjeta();
         siete.setDescripcion("Soy vendedor");
         siete.setNombre("Oliver");
         siete.setEdad(19);
+        siete.setLink(x.get(6)); //Para la obtencion del link
         resultado.add(siete);
 
         Tarjeta ocho = new Tarjeta();
         ocho.setDescripcion("Soy artista");
         ocho.setNombre("Diego");
         ocho.setEdad(19);
+        ocho.setLink(x.get(7)); //Para la obtencion del link
         resultado.add(ocho);
 
         Tarjeta nueve = new Tarjeta();
         nueve.setDescripcion("Soy un hombre");
         nueve.setNombre("Cesar");
         nueve.setEdad(19);
+        nueve.setLink(x.get(8)); //Para la obtencion del link
         resultado.add(nueve);
 
         Tarjeta diez = new Tarjeta();
         diez.setDescripcion("Soy una mujer");
         diez.setNombre("Marianita");
         diez.setEdad(19);
+        diez.setLink(x.get(9)); //Para la obtencion del link
         resultado.add(diez);
 
         return resultado;

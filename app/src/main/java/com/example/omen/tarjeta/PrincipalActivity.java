@@ -34,6 +34,7 @@ public class PrincipalActivity extends AppCompatActivity {
                 objeto.putExtra("Edad", x.getEdad());
                 objeto.putExtra("Descripcion", x.getDescripcion());
                 objeto.putExtra("Imagen", x.getImagen());
+                objeto.putExtra("Link", x.getLink()); // Para obtener el link
                 startActivity(objeto); //Iniciar la actividad
             }
         });

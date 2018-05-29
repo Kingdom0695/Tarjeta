@@ -2,11 +2,41 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/TextviewEjem"
-        android:layout_width="wrap_content"
+        android:text="Nombre"
+        android:gravity="center"
+        android:id="@+id/TextviewNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Edad"
+        android:id="@+id/TextviewEdad"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Descripcion"
+        android:gravity="center"
+        android:id="@+id/TextviewDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imagen2"/>
+
+    <TextView
+        android:text="URL"
+        android:gravity="center"
+        android:id="@+id/TextviewURL"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
 </LinearLayout>

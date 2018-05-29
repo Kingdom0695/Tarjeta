@@ -53,9 +53,9 @@ public class tarjetaAdapter extends BaseAdapter{
         TextView descripcionpersona = (TextView) v.findViewById(R.id.tercertextv);
         descripcionpersona.setText(datos.get(position).getDescripcion());
 
-        ImageView img = (ImageView) v.findViewById(R.id.imagen);
+        ImageView img = (ImageView) v.findViewById(R.id.imagen); //Para la primer vista(original)
 
-        Picasso.with(contexto).load(imagen.get(position)).into(img);
+        Picasso.with(contexto).load(imagen.get(position)).into(img); //Para la primer vista(original)
         return v;
     }
 }
